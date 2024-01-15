@@ -96,8 +96,8 @@ const Head = () => {
             🔍
           </button>
         </div>
-        <div className="fixed bg-white py-2 px-2 w-[29rem] shadow-lg rounded-lg">
-          {showSuggestions && (
+        {showSuggestions && (
+          <div className="fixed bg-white py-2 px-2 w-[29rem] shadow-lg rounded-lg">
             <ul>
               {suggestions.map((s) => (
                 <li key={s} className="shadow-sm py-2 hover:bg-gray-100 ">
@@ -105,8 +105,8 @@ const Head = () => {
                 </li>
               ))}
             </ul>
-          )}
-        </div>
+          </div>
+        )}
       </div>
       <div className="col-span-1">
         <img
